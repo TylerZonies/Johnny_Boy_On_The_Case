@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/Environment/platformMiddle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Environment/platformRightEnd.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Environment/platformLeftEnd.tscn" type="PackedScene" id=3]
+
+[node name="Game" type="Node"]
+
+[node name="platformMiddle" parent="." instance=ExtResource( 1 )]
+position = Vector2( 213.855, 528.72 )
+
+[node name="platformMiddle" parent="platformMiddle" instance=ExtResource( 1 )]
+position = Vector2( 140.304, 0.144348 )
+
+[node name="platformRightEnd" parent="platformMiddle" instance=ExtResource( 2 )]
+position = Vector2( 280.057, 0.167969 )
+
+[node name="platformLeftEnd" parent="." instance=ExtResource( 3 )]
+position = Vector2( 74.1159, 528.666 )
