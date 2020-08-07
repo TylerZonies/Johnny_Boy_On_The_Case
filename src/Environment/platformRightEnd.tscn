@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/tileSets/industrialTileSet.tres" type="TileSet" id=1]
+
+[node name="platformRightEnd" type="Area2D"]
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 70, 70 )
+format = 1
+tile_data = PoolIntArray( 65535, 2, 0, 0, 3, 0 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -71.1289, 70.3232, 64.5586, 70.3232, 67.7142, 68.3509, 70.0808, 64.801, 70.4753, 6.42379, 68.1086, 2.47939, 63.7698, 0.11274, -71.1289, -0.2817 )

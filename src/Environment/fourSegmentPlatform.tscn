@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/Environment/platformMiddle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Environment/platformLeftEnd.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Environment/platformRightEnd.tscn" type="PackedScene" id=3]
+
+[node name="platformOne" type="Node2D"]
+position = Vector2( 281.456, 525.099 )
+
+[node name="platformMiddle" type="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( -70.0142, 0.0201364 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="platformLeftEnd" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -210.009, 0.00589275 )
+
+[node name="platformMiddle2" type="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 70.0114, 0.0201564 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="platformRightEnd" type="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 210.009, 0.00781846 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
